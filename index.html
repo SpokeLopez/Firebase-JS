@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Firebase CRUD</title>
+</head>
+
+<body>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-body">
+                    <div class="card bg-light">
+                        <div class="card-header">CRUD con Firebase</div>
+                        <div class="card-body">
+                            <h4 class="card-title">Tareas</h4>
+                            <form name="tasks" id="task-form">
+                                <div class="form-group">
+                                    <input type="text" id="task-title" class="form-control"
+                                        placeholder="Título de la tarea" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="task-description" rows="3" class="form-control"
+                                        placeholder="Descripción de la tarea"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary" id="save-task">Guardar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="tasks-container">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyD7XRP9bgZYkky5ZP7RVodqMqp7Oliku6k",
+        authDomain: "crud-js-19b77.firebaseapp.com",
+        projectId: "crud-js-19b77",
+        storageBucket: "crud-js-19b77.appspot.com",
+        messagingSenderId: "718581110228",
+        appId: "1:718581110228:web:1d5e7124567deb1ce77241"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+
+</html>
