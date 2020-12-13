@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', async (e) =>{
             console.log(doc.data());
             const task = doc.data();
             task.id = doc.id;
-            taskscontainer.innerHTML += `<div class="card card-body mt-2 border-primary">
+            taskscontainer.innerHTML += `<div class="card card-body mt-2 border-dark task-container">
                 <h4>${task.title}</h4>
                 <hr>
                 <p>${task.description}</p>

@@ -1,0 +1,6 @@
+.app-tasks .task-container:hover{
+    background-color: #EAE8ED;
+}
+#task-description{
+    min-height: 100px;
+}
